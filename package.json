@@ -1,0 +1,23 @@
+{
+  "name": "pw-exp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/experimental-ct-react": "^1.49.0",
+    "@types/node": "^22.9.1"
+  },
+  "scripts": {
+    "test-ct": "playwright test -c playwright-ct.config.ts",
+    "test-ct-ce": "cross-env NODE_OPTIONS='-C xxx' playwright test -c playwright-ct.config.ts",
+    "test-ct-hook": "playwright test -c playwright-ct.config.hook.ts"
+  },
+  "packageManager": "yarn@4.5.1",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.11"
+  }
+}
